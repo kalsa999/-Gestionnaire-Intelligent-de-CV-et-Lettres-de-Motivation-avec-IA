@@ -1,0 +1,226 @@
+2026-04-08 01:57:57 [[31merror[39m]: Cet email est déjà utilisé
+Error: Cet email est déjà utilisé
+    at register (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\services\authService.js:22:17)
+    at async registerController (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\controllers\authController.js:17:20)
+2026-04-08 02:10:18 [[31merror[39m]: Erreur OpenAI: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************TpIA. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-04-08 02:10:18 [[31merror[39m]: Clé API OpenAI invalide
+Error: Clé API OpenAI invalide
+    at generateLetter (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\services\aiService.js:76:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Object.createLettre (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\services\lettreService.js:32:58)
+    at async createLettreController (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\controllers\lettreController.js:12:20)
+2026-04-08 02:13:09 [[31merror[39m]: Erreur OpenAI: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************TpIA. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-04-08 02:13:09 [[31merror[39m]: Clé API OpenAI invalide
+Error: Clé API OpenAI invalide
+    at generateLetter (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\services\aiService.js:76:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Object.createLettre (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\services\lettreService.js:32:58)
+    at async createLettreController (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\controllers\lettreController.js:12:20)
+2026-04-08 02:14:07 [[31merror[39m]: Cet email est déjà utilisé
+Error: Cet email est déjà utilisé
+    at register (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\services\authService.js:22:17)
+    at async registerController (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\controllers\authController.js:17:20)
+2026-04-08 02:15:23 [[31merror[39m]: Erreur OpenAI: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************TpIA. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-04-08 02:15:23 [[31merror[39m]: Clé API OpenAI invalide
+Error: Clé API OpenAI invalide
+    at generateLetter (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\services\aiService.js:76:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Object.createLettre (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\services\lettreService.js:32:58)
+    at async createLettreController (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\controllers\lettreController.js:12:20)
+2026-04-08 02:17:17 [[31merror[39m]: Erreur OpenAI: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************TpIA. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-04-08 12:27:51 [[31merror[39m]: Cet email est déjà utilisé
+Error: Cet email est déjà utilisé
+    at register (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\services\authService.js:22:17)
+    at async registerController (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\controllers\authController.js:17:20)
+2026-04-08 12:28:21 [[31merror[39m]: Erreur OpenAI: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************TpIA. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-04-08 12:47:24 [[31merror[39m]: 
+Invalid `prisma.profil.create()` invocation in
+C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\controllers\profilController.js:21:40
+
+  18   });
+  19 }
+  20 
+→ 21 const profil = await prisma.profil.create(
+Foreign key constraint violated on the fields: (`userId`)
+PrismaClientKnownRequestError: 
+Invalid `prisma.profil.create()` invocation in
+C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\controllers\profilController.js:21:40
+
+  18   });
+  19 }
+  20 
+→ 21 const profil = await prisma.profil.create(
+Foreign key constraint violated on the fields: (`userId`)
+    at ei.handleRequestError (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async createProfilController (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\controllers\profilController.js:21:20)
+2026-04-08 12:47:37 [[31merror[39m]: Erreur OpenAI: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************TpIA. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-04-08 12:47:37 [[31merror[39m]: 
+Invalid `prisma.lettre.create()` invocation in
+C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\services\lettreService.js:41:38
+
+  38 });
+  39 
+  40 // 3. حفظ الرسالة في قاعدة البيانات
+→ 41 const lettre = await prisma.lettre.create(
+Foreign key constraint violated on the fields: (`userId`)
+PrismaClientKnownRequestError: 
+Invalid `prisma.lettre.create()` invocation in
+C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\services\lettreService.js:41:38
+
+  38 });
+  39 
+  40 // 3. حفظ الرسالة في قاعدة البيانات
+→ 41 const lettre = await prisma.lettre.create(
+Foreign key constraint violated on the fields: (`userId`)
+    at ei.handleRequestError (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Object.createLettre (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\services\lettreService.js:41:18)
+    at async createLettreController (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\controllers\lettreController.js:12:20)
+2026-04-08 12:55:43 [[31merror[39m]: Erreur OpenAI: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************TpIA. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-04-08 12:58:02 [[31merror[39m]: Erreur OpenAI: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************TpIA. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-04-09 15:31:24 [[31merror[39m]: ❌ Impossible de se connecter à la base de données Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+PrismaClientInitializationError: Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+    at r (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\index.js:10:5)
+2026-04-09 14:33:20 [[31merror[39m]: ❌ Impossible de se connecter à la base de données Can't reach database server at `mysql-db:3306`
+
+Please make sure your database server is running at `mysql-db:3306`.
+PrismaClientInitializationError: Can't reach database server at `mysql-db:3306`
+
+Please make sure your database server is running at `mysql-db:3306`.
+    at r (/usr/src/app/node_modules/@prisma/client/runtime/library.js:112:2770)
+    at async startServer (/usr/src/app/src/index.js:10:5)
+2026-04-09 15:03:50 [[31merror[39m]: Cet email est déjà utilisé
+Error: Cet email est déjà utilisé
+    at register (/usr/src/app/src/services/authService.js:22:17)
+    at async registerController (/usr/src/app/src/controllers/authController.js:17:20)
+2026-04-09 15:04:39 [[31merror[39m]: Profil introuvable
+Error: Profil introuvable
+    at Object.createLettre (/usr/src/app/src/services/lettreService.js:25:19)
+    at async createLettreController (/usr/src/app/src/controllers/lettreController.js:12:20)
+2026-04-09 15:04:59 [[31merror[39m]: Profil introuvable
+Error: Profil introuvable
+    at Object.createLettre (/usr/src/app/src/services/lettreService.js:25:19)
+    at async createLettreController (/usr/src/app/src/controllers/lettreController.js:12:20)
+2026-04-09 15:06:06 [[31merror[39m]: Cet email est déjà utilisé
+Error: Cet email est déjà utilisé
+    at register (/usr/src/app/src/services/authService.js:22:17)
+    at async registerController (/usr/src/app/src/controllers/authController.js:17:20)
+2026-04-09 16:10:28 [[31merror[39m]: ❌ Impossible de se connecter à la base de données Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+PrismaClientInitializationError: Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+    at r (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (C:\Users\USER\OneDrive\Documents\project-lettre de motivation-ai\backend\src\index.js:10:5)
+2026-04-09 15:18:19 [[31merror[39m]: Profil introuvable
+Error: Profil introuvable
+    at Object.createLettre (/usr/src/app/src/services/lettreService.js:25:19)
+    at async createLettreController (/usr/src/app/src/controllers/lettreController.js:12:20)
+2026-04-09 15:20:41 [[31merror[39m]: Profil introuvable
+Error: Profil introuvable
+    at Object.createLettre (/usr/src/app/src/services/lettreService.js:25:19)
+    at async createLettreController (/usr/src/app/src/controllers/lettreController.js:12:20)
+2026-04-09 15:23:29 [[31merror[39m]: Erreur OpenAI: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************TpIA. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-04-09 17:02:01 [[31merror[39m]: Email ou mot de passe incorrect
+Error: Email ou mot de passe incorrect
+    at login (/usr/src/app/src/services/authService.js:60:17)
+    at async loginController (/usr/src/app/src/controllers/authController.js:27:20)
+2026-04-09 17:05:42 [[31merror[39m]: Erreur OpenAI: Request timed out.
+2026-04-09 17:05:42 [[31merror[39m]: Request timed out.
+Error: Request timed out.
+    at OpenAI.makeRequest (/usr/src/app/node_modules/openai/client.js:328:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async generateLetter (/usr/src/app/src/services/aiService.js:37:22)
+    at async Object.createLettre (/usr/src/app/src/services/lettreService.js:32:58)
+    at async createLettreController (/usr/src/app/src/controllers/lettreController.js:12:20)
+2026-04-09 17:19:59 [[31merror[39m]: Erreur OpenAI: Request timed out.
+2026-04-09 17:19:59 [[31merror[39m]: Request timed out.
+Error: Request timed out.
+    at OpenAI.makeRequest (/usr/src/app/node_modules/openai/client.js:328:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async generateLetter (/usr/src/app/src/services/aiService.js:37:22)
+    at async Object.createLettre (/usr/src/app/src/services/lettreService.js:32:58)
+    at async createLettreController (/usr/src/app/src/controllers/lettreController.js:12:20)
+2026-04-09 17:27:16 [[31merror[39m]: Erreur OpenAI: Request timed out.
+2026-04-09 17:27:16 [[31merror[39m]: Request timed out.
+Error: Request timed out.
+    at OpenAI.makeRequest (/usr/src/app/node_modules/openai/client.js:328:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async generateLetter (/usr/src/app/src/services/aiService.js:37:22)
+    at async Object.createLettre (/usr/src/app/src/services/lettreService.js:32:58)
+    at async createLettreController (/usr/src/app/src/controllers/lettreController.js:12:20)
+2026-04-09 17:28:19 [[31merror[39m]: Erreur OpenAI: Request timed out.
+2026-04-09 17:28:19 [[31merror[39m]: Request timed out.
+Error: Request timed out.
+    at OpenAI.makeRequest (/usr/src/app/node_modules/openai/client.js:328:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async generateLetter (/usr/src/app/src/services/aiService.js:37:22)
+    at async Object.createLettre (/usr/src/app/src/services/lettreService.js:32:58)
+    at async createLettreController (/usr/src/app/src/controllers/lettreController.js:12:20)
+2026-04-09 17:30:54 [[31merror[39m]: Erreur OpenAI: Request timed out.
+2026-04-09 17:30:54 [[31merror[39m]: Request timed out.
+Error: Request timed out.
+    at OpenAI.makeRequest (/usr/src/app/node_modules/openai/client.js:328:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async generateLetter (/usr/src/app/src/services/aiService.js:37:22)
+    at async Object.createLettre (/usr/src/app/src/services/lettreService.js:32:58)
+    at async createLettreController (/usr/src/app/src/controllers/lettreController.js:12:20)
+2026-04-09 17:42:25 [[31merror[39m]: Erreur OpenAI: Request timed out.
+2026-04-09 17:42:25 [[31merror[39m]: Request timed out.
+Error: Request timed out.
+    at OpenAI.makeRequest (/usr/src/app/node_modules/openai/client.js:328:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async generateLetter (/usr/src/app/src/services/aiService.js:37:22)
+    at async Object.createLettre (/usr/src/app/src/services/lettreService.js:32:58)
+    at async createLettreController (/usr/src/app/src/controllers/lettreController.js:12:20)
+2026-04-09 17:49:50 [[31merror[39m]: Erreur OpenAI: Request timed out.
+2026-04-09 17:49:50 [[31merror[39m]: Request timed out.
+Error: Request timed out.
+    at OpenAI.makeRequest (/usr/src/app/node_modules/openai/client.js:328:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async generateLetter (/usr/src/app/src/services/aiService.js:37:22)
+    at async Object.createLettre (/usr/src/app/src/services/lettreService.js:32:58)
+    at async createLettreController (/usr/src/app/src/controllers/lettreController.js:12:20)
+2026-04-09 17:54:50 [[31merror[39m]: Erreur OpenAI: Request timed out.
+2026-04-09 17:54:50 [[31merror[39m]: Request timed out.
+Error: Request timed out.
+    at OpenAI.makeRequest (/usr/src/app/node_modules/openai/client.js:328:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async generateLetter (/usr/src/app/src/services/aiService.js:37:22)
+    at async Object.createLettre (/usr/src/app/src/services/lettreService.js:32:58)
+    at async createLettreController (/usr/src/app/src/controllers/lettreController.js:12:20)
+2026-04-09 19:03:25 [[31merror[39m]: ❌ Impossible de se connecter à la base de données Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+PrismaClientInitializationError: Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+    at r (C:\Users\Kalsa\Downloads\project-lettre de motivation-ai\project-lettre de motivation-ai\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (C:\Users\Kalsa\Downloads\project-lettre de motivation-ai\project-lettre de motivation-ai\backend\src\index.js:10:5)
+2026-04-09 18:05:02 [[31merror[39m]: ❌ Impossible de se connecter à la base de données Can't reach database server at `mysql-db:3306`
+
+Please make sure your database server is running at `mysql-db:3306`.
+PrismaClientInitializationError: Can't reach database server at `mysql-db:3306`
+
+Please make sure your database server is running at `mysql-db:3306`.
+    at r (/usr/src/app/node_modules/@prisma/client/runtime/library.js:112:2770)
+    at async startServer (/usr/src/app/src/index.js:10:5)
+2026-04-09 19:06:34 [[31merror[39m]: Erreur OpenAI: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2026-04-09 19:06:34 [[31merror[39m]: Limite d'API atteinte, réessayez dans quelques instants
+Error: Limite d'API atteinte, réessayez dans quelques instants
+    at generateLetter (C:\Users\Kalsa\Downloads\project-lettre de motivation-ai\project-lettre de motivation-ai\backend\src\services\aiService.js:72:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Object.createLettre (C:\Users\Kalsa\Downloads\project-lettre de motivation-ai\project-lettre de motivation-ai\backend\src\services\lettreService.js:32:58)
+    at async createLettreController (C:\Users\Kalsa\Downloads\project-lettre de motivation-ai\project-lettre de motivation-ai\backend\src\controllers\lettreController.js:12:20)
+2026-04-09 19:07:55 [[31merror[39m]: Erreur OpenAI: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************_-8A. You can find your API key at https://platform.openai.com/account/api-keys.

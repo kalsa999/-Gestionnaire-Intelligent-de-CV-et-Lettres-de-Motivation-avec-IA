@@ -1,0 +1,55 @@
+### 1. Register a new user (Register)
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "firstName": "Hassan",
+  "lastName": "El Amrani",
+  "email": "hassan.test@example.com",
+  "password": "Password123"
+}
+
+###
+### 2. Login (Login)
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "hassan.test@example.com",
+  "password": "Password123"
+}
+
+###
+
+### 3. Create a profile (Profil)
+POST http://localhost:3000/api/profils
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtbnJtYTQxbDAwMDBtejExaTU3cTNjeDgiLCJlbWFpbCI6Imhhc3Nhbi50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzc1NzQ3NjI5LCJleHAiOjE3NzYzNTI0Mjl9.w2xJ2Wg56nXjNK4c_lZSVQ3xTTBAOnMsdJPe7L1AkaY
+
+{
+  "titre": "Développeur Full Stack",
+  "competences": ["JavaScript", "React", "Node.js", "MySQL"],
+  "experience": "Expérience Docker & Backend",
+  "formation": "Formation Full Stack"
+}
+
+###
+
+
+GET http://localhost:3000/api/profils
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtbnJtYTQxbDAwMDBtejExaTU3cTNjeDgiLCJlbWFpbCI6Imhhc3Nhbi50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzc1NzQ3NjI5LCJleHAiOjE3NzYzNTI0Mjl9.w2xJ2Wg56nXjNK4c_lZSVQ3xTTBAOnMsdJPe7L1AkaY
+
+###
+
+### 5. Create a motivational message
+POST http://localhost:3000/api/lettres
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtbnJtYTQxbDAwMDBtejExaTU3cTNjeDgiLCJlbWFpbCI6Imhhc3Nhbi50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzc1NzQ3NjI5LCJleHAiOjE3NzYzNTI0Mjl9.w2xJ2Wg56nXjNK4c_lZSVQ3xTTBAOnMsdJPe7L1AkaY
+
+{
+  "titre": "Candidature Docker Test",
+  "poste": "Junior Backend Engineer",
+  "entreprise": "Docker Solutions",
+  "ton": "PROFESSIONNEL",
+  "profilId": "cmnrmiw580004mz11vwlv49oj"
+}

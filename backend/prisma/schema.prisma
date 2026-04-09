@@ -1,0 +1,95 @@
+// This is your Prisma schema file
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================
+// User Model
+// ============================
+model User {
+  id        String   @id @default(cuid()) // Auto-generated unique ID
+  email     String   @unique              // Email (non-repeating)
+  password  String                        // Bcrypt encrypted password
+  firstName String                        // First name
+  lastName  String                        // Last name
+  createdAt DateTime @default(now())      // Creation date (automatic)
+  updatedAt DateTime @updatedAt           // Last modification date (automatic)
+
+  lettres Lettre[] // Relationship: One user → Many letters
+  profils Profil[] // Relationship: One user → Many profiles
+
+  @@map("users") // Table name in the database
+}
+
+// ============================
+// Candidate Profile Model
+// ============================
+model Profil {
+  id          String   @id @default(cuid())
+  titre       String   // Example: "Full-Stack Developer"
+  competences Json     // Array of skills (JSON in MySQL): ["JavaScript", "React", ...]
+  experience  String?  // Professional experience description (optional)
+  formation   String?  // Education and training description (optional)
+  isDefault   Boolean  @default(false) // Is this the default profile?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  userId  String          // Foreign key → User
+  user    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lettres Lettre[] // One profile → Many letters
+
+  @@map("profils")
+}
+
+// ============================
+// Generated Motivational Letter Model
+// ============================
+model Lettre {
+  id               String   @id @default(cuid())
+  titre            String   // Letter title (chosen by user)
+  poste            String   // Desired position
+  entreprise       String   // Company name
+  descriptionPoste String?  // Job ad text (optional)
+  contenu          String   @db.Text // Generated letter (long text)
+  ton              Ton      @default(PROFESSIONNEL) // Writing style
+  status           Status   @default(BROUILLON)     // Letter status
+  promptUsed       String?  @db.Text // The prompt sent to the AI
+  modelUsed        String?  // Example: "gpt-4o"
+  tokensUsed       Int?     // Number of tokens consumed
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  userId   String          // Foreign key → User
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  profilId String?         // Foreign key → Profil (optional)
+  profil   Profil?  @relation(fields: [profilId], references: [id])
+
+  @@map("lettres")
+}
+
+// ============================
+// Enums — Predefined values
+// ============================
+
+// Letter writing style
+enum Ton {
+  PROFESSIONNEL // Formal and professional
+  DYNAMIQUE     // Dynamic and enthusiastic
+  CREATIF       // Creative and unique
+  FORMEL        // Very formal
+}
+
+// Letter status in the workflow
+enum Status {
+  BROUILLON // Draft - under editing
+  FINALE    // Final - ready
+  ENVOYEE   // Sent to company
+  ARCHIVEE  // Archived
+}
